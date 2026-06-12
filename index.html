@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+    background-image: url("img/pozadina2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container-grid{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+    width:90%;
+    max-width:900px;
+    margin:auto;
+}
+
+.container-grid img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+h1{
+    text-align:center;
+    margin-top:30px;
+    color:red;
+}
+
+.section{
+    margin-top:30px;
+}
+
+/* TELEFON */
+
+@media (max-width:600px){
+
+    .container-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .container-grid img{
+        height:150px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Galerija destinacija</h1>
+
+<div class="container-grid">
+    <div><img src="img/london.jpg" alt="London"></div>
+    <div><img src="img/paris.jpg" alt="Pariz"></div>
+    <div><img src="img/madrid.jpg" alt="Madrid"></div>
+</div>
+
+<div class="section">
+
+<h1 id="london">Galerija London</h1>
+
+<div class="container-grid">
+    <div><img src="img/london1.jpg"></div>
+    <div><img src="img/london2.jpg"></div>
+    <div><img src="img/london3.jpg"></div>
+    <div><img src="img/london4.jpg"></div>
+    <div><img src="img/london5.jpg"></div>
+    <div><img src="img/london6.jpg"></div>
+</div>
+
+</div>
+
+<div class="section">
+
+<h1 id="pariz">Galerija Paris</h1>
+
+<div class="container-grid">
+    <div><img src="img/paris1.jpg"></div>
+    <div><img src="img/paris2.jpg"></div>
+    <div><img src="img/paris3.jpg"></div>
+    <div><img src="img/paris4.jpg"></div>
+    <div><img src="img/paris5.jpg"></div>
+    <div><img src="img/paris6.jpg"></div>
+</div>
+
+</div>
+
+<div class="section">
+
+<h1 id="madrid">Galerija Madrid</h1>
+
+<div class="container-grid">
+    <div><img src="img/madrid1.jpg"></div>
+    <div><img src="img/madrid2.jpg"></div>
+    <div><img src="img/madrid3.jpg"></div>
+    <div><img src="img/madrid4.jpg"></div>
+    <div><img src="img/madrid5.jpg"></div>
+    <div><img src="img/madrid6.jpg"></div>
+</div>
+
+</div>
+
+</body>
+</html>
